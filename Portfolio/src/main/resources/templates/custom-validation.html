@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/function/custom-validation}" method="POST" th:object="${inputWebDto}">
+		<input type="password" name="password"/>
+		<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}" />
+		<input type="password" name="confirmPassword"/>
+		<button>Submit</button>
+	</form>
+</body>
+</html>

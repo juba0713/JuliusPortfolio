@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+	<main>
+		<nav class="header">
+			<img th:src="@{/icons/burger.svg}" alt="burger"/>
+		</nav>	
+		<nav class="sidebar">
+			<div class="top-left-box"></div>
+			<div class="top-right-box"></div>
+			<div class="sidebar-content">
+				<div class="sidebar-cont">
+					<div class="sidebar-head">Basas Portfolio</div>
+					<span>About me</span>
+					<span>Resume</span>
+					<br>
+					<br>
+				</div>
+				<div class="sidebar-cont">
+					<div class="sidebar-head">Systems</div>
+					<span>System1</span>
+					<span>System1</span>
+				</div>
+				<div class="sidebar-cont">
+					<div class="sidebar-head">Functions</div>
+					<span>Function1</span>
+					<span>Function1</span>
+				</div>
+			</div>
+			<div class="bottom-left-box"></div>
+			<div class="bottom-right-box"></div>
+		</nav>
+	</main>
+</body>
+</html>
